@@ -1,0 +1,137 @@
+.cashier-page {
+  padding: 32px;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.cashier-header {
+  margin-bottom: 32px;
+}
+
+.cashier-subtitle {
+  color: var(--text-secondary);
+  margin-top: 8px;
+}
+
+.cashier-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  color: var(--text-secondary);
+}
+
+.cashier-empty p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 16px;
+  color: var(--text-primary);
+}
+
+.cashier-empty-hint {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-top: 8px;
+}
+
+.cashier-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 24px;
+}
+
+.cashier-card {
+  background: var(--surface-light);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.cashier-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--brand-primary);
+  box-shadow: 0 12px 24px rgba(255, 68, 68, 0.1);
+}
+
+.cashier-card-header {
+  padding: 16px 20px;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.cashier-table {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.cashier-order-id {
+  font-size: 14px;
+  color: var(--text-secondary);
+  font-family: monospace;
+}
+
+.cashier-card-body {
+  padding: 20px;
+  flex: 1;
+}
+
+.cashier-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.cashier-items {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--border-color);
+}
+
+.cashier-item-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.cashier-card-footer {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  border-top: 1px solid var(--border-color);
+}
+
+.cashier-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.cashier-total .amount {
+  font-size: 24px;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.btn-pay {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+  padding: 14px;
+}
